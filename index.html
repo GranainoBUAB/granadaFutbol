@@ -11,13 +11,33 @@
       integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2"
       crossorigin="anonymous"
     />
+    <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="./css/index.css" />
   </head>
   <body>
     <h1>Spanish LaLiga 2</h1>
     <h2>----------</h2>
-    <div id="tableGranadaSection"></div>
 
+    <table class="table table-bordered table-dark">
+      <thead>
+        <tr>
+          <th scope="col">#</th>
+          <th scope="col">Played</th>
+          <th scope="col">Points</th>
+          <th scope="col">W</th>
+          <th scope="col">T</th>
+          <th scope="col">L</th>
+          <th scope="col">Diff</th>
+          <th scope="col">Splits</th>
+        </tr>
+      </thead>
+      <tbody id="tableGranadaSection"></tbody>
+    </table>
+
+    <!-- <div id="tableGranadaSection"></div> -->
+
+
+    
     <script src="./js/index.js"></script>
   </body>
 </html>
