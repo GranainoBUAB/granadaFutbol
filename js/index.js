@@ -44,7 +44,7 @@ fetchFootballTable().then(teams => {
         </div>
         </div>  */
         tableGranadaSection.innerHTML += `
-        <h4>Tabla</h4>
+
         <h5 >${rank}</h5>
         <h5 >${team}</h5>
         <h5 >${wins}</h5>
