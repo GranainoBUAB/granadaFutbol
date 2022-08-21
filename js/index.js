@@ -15,7 +15,7 @@ fetchFootballTable().then(teams => {
 
         let team = teams.data.standings[index].team.name;
         /* let rank = teams.data.standings[index].note.rank; */
-        /* let logo = teams.data.standings[index].logos[0].href; */
+        let logo = teams.data.standings[index].team.logos[0].href;
 
         let wins = teams.data.standings[index].stats[0].value;
         let losses = teams.data.standings[index].stats[1].value;
@@ -28,23 +28,23 @@ fetchFootballTable().then(teams => {
         tableGranadaSection.innerHTML += `
 
 
-    <tr>
-      <th scope="row">${index+1}.  ${team}</th>
-      <td>${gamePlayed}</td>
-      <td>${points}</td>
-      <td>${wins}</td>
-      <td>${ties}</td>
-      <td>${losses}</td>
-      <td>${pointDifferential}</td>
-      <td>${allSplits}</td>
-      
-
-    </tr>
-
-  
-        
-        
-
+            <tr>
+                <th scope="row">${index + 1}</th>
+                <td>
+                    <div class="relative w-8 h-8 mr-3 rounded-full md:block">
+                    <img class="object-cover w-full h-full rounded-full" src="${logo}" alt="" loading="lazy" />
+                    <div class="absolute inset-0 rounded-full shadow-inner" aria-hidden="true"></div>
+                    </div>
+                </td>
+                <td>${team}</td>
+                <td>${gamePlayed}</td>
+                <td>${points}</td>
+                <td>${wins}</td>
+                <td>${ties}</td>
+                <td>${losses}</td>
+                <td>${pointDifferential}</td>
+                <td>${allSplits}</td>
+            </tr>
 
         `
     }
