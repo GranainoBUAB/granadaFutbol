@@ -29,8 +29,8 @@ fetchFootballTable().then(teams => {
 
 
     <tr>
-      <th scope="row">${index+1}</th>
-      <td>${team}</td>
+      <th scope="row">${index+1}.  ${team}</th>
+      <td>${gamePlayed}</td>
       <td>${points}</td>
       <td>${wins}</td>
       <td>${ties}</td>
