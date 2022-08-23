@@ -38,11 +38,8 @@ fetchFootballTable().then(teams => {
                     </div>
                 </td>
                 <td>${team}</td>
-                <td>${gamePlayed}</td>
                 <td>${points}</td>
-                <td>${wins}</td>
-                <td>${ties}</td>
-                <td>${losses}</td>
+                <td>${gamePlayed}</td>
                 <td>${pointDifferential}</td>
                 <td>${allSplits}</td>
             </tr>
